@@ -1,0 +1,9 @@
+version: '2'
+services:
+  ds:
+    build: .
+    image: ds-env
+    volumes:
+      - ~/program/r-easy-stats-by-python/:/work
+    ports:
+      - "8888:8888"
